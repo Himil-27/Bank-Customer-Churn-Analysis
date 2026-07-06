@@ -23,11 +23,10 @@ The bank is experiencing customer attrition, leading to potential revenue loss a
 ## Project Structure
 
 ```
-├── Bank_Churn__Copy.csv        # Raw dataset (10,000 rows, 14 columns)
-├── SQL_CLEANING.sql            # Data cleaning & preparation script
-├── SQL_ANALYSIS.sql            # Exploratory SQL analysis
-├── Insights.txt                 # Key findings & recommendations
-├── Bank_Screenshots_PDF.pdf     # Power BI dashboard screenshots
+├── bank_customer_churn.csv        # Raw dataset (10,000 rows, 14 columns)
+├── 01_data_cleaning.sql            # Data cleaning & preparation script
+├── 02_business_analysis.sql         # Exploratory SQL analysis
+├── Bank_Screenshots.png            # Power BI dashboard screenshots
 └── README.md
 ```
 
@@ -130,10 +129,6 @@ Non_Churn_Rate       = DIVIDE([Non_Churner_cnt], [Customer_cnt]) * 100
 | Single-Product Inactive User | Any age, Inactive, 1 product | High volume + high churn |
 | Young but Under-engaged | Age 25–40, Inactive, 1 product | Lower risk, scalable impact |
 
-## Statistical Validation
-
-A chi-square test was applied to validate the relationship between activity/product ownership and churn, confirming these variables have a statistically significant impact on churn behavior.
-
 ## Business Recommendations
 
 1. **Cross-Sell Strategy** – Push customers from 1 → 2 products, prioritizing inactive users
@@ -143,12 +138,9 @@ A chi-square test was applied to validate the relationship between activity/prod
 
 ## How to Reproduce
 
-1. Import `Bank_Churn__Copy.csv` into SQL Server and run `SQL_CLEANING.sql` to prepare the data
-2. Run `SQL_ANALYSIS.sql` for exploratory analysis
+1. Import `bank_customer_churn.csv` into SQL Server and run `01_data_cleaning.sql` to prepare the data
+2. Run `02_business_analysis.sql` for exploratory analysis
 3. Load the cleaned table into Power BI and apply the conditional columns described above
 4. Add the DAX measures listed above
 5. Rebuild the dashboard pages: Customer Demographics, Strong Insights, Weak Insights, Combination Analysis
 
----
-
-*See `Insights.txt` for the full detailed write-up and `Bank_Screenshots_PDF.pdf` for dashboard screenshots.*
