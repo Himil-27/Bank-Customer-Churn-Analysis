@@ -144,3 +144,5 @@ Non_Churn_Rate       = DIVIDE([Non_Churner_cnt], [Customer_cnt]) * 100
 4. Add the DAX measures listed above
 5. Rebuild the dashboard pages: Customer Demographics, Strong Insights, Weak Insights, Combination Analysis
 
+<img width="654" height="737" alt="Strong Insights" src="https://github.com/user-attachments/assets/ec605716-b1b0-4b01-a388-4822a35ae4a1" /> <img width="654" height="737" alt="Intersegment Analysis" src="https://github.com/user-attachments/assets/917f66cb-5727-420c-ab64-a5e44da464f9" />
+
