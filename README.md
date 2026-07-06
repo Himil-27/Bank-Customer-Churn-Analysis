@@ -1,4 +1,5 @@
-![Uploading banner.svg…]()
+<img width="882" height="187" alt="Screenshot 2026-07-06 144453" src="https://github.com/user-attachments/assets/39d7cb80-a285-4c4b-a8f4-72b4a10e8fda" />
+
 
 # Bank-Customer-Churn-Analysis
 Business focused customer churn analysis using SQL and Power BI with actionable insights, customer segmentation, and retention recommendations.
